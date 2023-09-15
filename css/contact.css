@@ -57,73 +57,81 @@ nav ul li a{
     text-decoration: none;
 }
 
-/* ----- DONATION SECTION ----- */
-.donation-content{
-    text-align: center;
-    padding: 50px 5im0px;
+/* ----- CONTACT US ----- */
+.contact-details{
+    padding: 40px 150px;
     border-bottom: 1px solid var(--secondary-font-col);
 }
-.headings{
-    padding: 30px 0;
-    line-height: 2em;
-}
-.head1{
+.contact-head{
     font-size: var(--heading-font-size);
-    letter-spacing: 0.1em;
     color: var(--main-font-col);
 }
-.head2{
+.contact-sub-head{
+    margin: 10px 0;
     font-size: var(--subhead-font-size);
 }
-.head3{
-    font-size: var(--subhead-font-size);
-    color: var(--main-font-col);
+.details td{
+    padding: 20px 50px;
 }
-.donation-content iframe{
-    width: 500px;
-    height: 300px;
-    margin: 40px 0;
-}
-
-/* ----- PAYMENT CONTENT ----- */
-.payment-content{
-    margin-top: 30px;
-    text-align: center;
-}
-.payment-grid{
-    display: grid;
-    grid-template-columns: 40% 60%;
-}
-.payment-head{
-    color: var(--main-font-col);
-    font-size: calc(var(--heading-font-size) - 10px);
-    margin-bottom: 20px;
-}
-.grid1{
-    text-align: center;
-    line-height: 2em;
-}
-.qr-details{
-    width: 250px;
-}
-.grid2{
-    padding: 10px 20px;
-    line-height: 2em;
-}
-.grid2 td{
-    padding: 20px;
-}
-.table-head{
-    font-size: var(--secondary-font-size);
+.details-head{
+    font-size: calc(var(--primary-font-size) - 5px);
+    font-weight: 600;
     color: var(--main-font-col);
     text-transform: uppercase;
-    font-weight: 600;
-    text-align: start;
 }
-.table-content{
+.details-content{
     font-size: var(--secondary-font-size);
-    text-align: start;
+    font-weight: bold;
 }
+.details-content a{
+    text-decoration: none;
+    color: var(--secondary-font-col);
+}
+
+/* ----- MEMBERS ----- */
+.members{
+    padding: 20px;
+    text-align: center;
+}
+.members-head{
+    color: var(--main-font-col);
+    font-size: var(--heading-font-size);
+
+}
+.members-grid{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 2em;
+    justify-content: space-evenly;
+}
+.grids{
+    margin-top: 30px;
+    background-color: rgb(255, 255, 255, 0.5);
+    border: 1px solid var(--secondary-font-col);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    line-height: 2em;
+}
+.dp-image img{
+    width: 200px;
+    border-radius: 50%;
+}
+.members-grid .designation{
+    text-align: left;
+    font-size: calc(var(--primary-font-size) - 5px);
+    font-weight: 800;
+}
+.members-grid .name{
+    font-size: var(--primary-font-size);
+    font-weight: 600;
+    color: var(--main-font-col);
+}
+.members-grid .phone{
+    font-size: var(--primary-font-size);
+    font-weight: bold;
+}
+
 
 
 /* ----- FOOTER SECTION ----- */
@@ -256,27 +264,96 @@ nav ul li a{
     }
 }
 
-@media (max-width: 780px) {
-    .grid2{
-        padding: 5px 5px;
+@media (max-width: 770px) {
+    .members-grid{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        gap: 2em;
+        justify-content: space-evenly;
     }
-    .grid2 td{
-        padding: 10px;
+    .grids{
+        margin-top: 30px;
+        background-color: rgb(255, 255, 255, 0.5);
+        border: 1px solid var(--secondary-font-col);
+        border-radius: 5px;
+        text-align: center;
+        padding: 20px;
+        line-height: 2em;
+    }
+    .dp-image img{
+        width: 150px;
+        border-radius: 50%;
+    }
+    .members-grid .designation{
+        text-align: left;
+        font-size: calc(var(--primary-font-size) - 10px);
+        font-weight: 800;
+    }
+    .members-grid .name{
+        font-size: var(--secondary-font-size);
+        font-weight: 600;
+        color: var(--main-font-col);
+    }
+    .members-grid .phone{
+        font-size: var(--secondary-font-size);
+        font-weight: bold;
     }
 }
 
-@media (max-width: 426px) {
-    .head1{
+@media (max-width: 430px) {
+    /* ----- CONTACT US ----- */
+    .contact-details{
+        padding: 5px;
+    }
+    .contact-head{
+        font-size:  calc(var(--heading-font-size) - 15px);
+    }
+    .details td{
+        padding: 15px 20px 15px 0;
+    }
+    .details-head{
+        font-size: calc(var(--primary-font-size) - 7px);
+    }
+    .details-content{
+        font-size: calc(var(--secondary-font-size) - 5px);
+    }
+
+    /* ----- MEMBERS ----- */
+    .members-head{
         font-size: calc(var(--heading-font-size) - 20px);
+
     }
-    .head2, .head3{
-        font-size: calc(var(--subhead-font-size) - 7px);
-    }
-    .donation-content iframe{
-        width: 300px;
-        height: 200px;
-    }
-    .payment-grid{
+    .members-grid{
+        display: grid;
         grid-template-columns: auto;
+        gap: 2em;
+        justify-content: space-evenly;
     }
+    .grids{
+        margin-top: 30px;
+        background-color: rgb(255, 255, 255, 0.5);
+        border: 1px solid var(--secondary-font-col);
+        border-radius: 5px;
+        text-align: center;
+        padding: 20px;
+        line-height: 2em;
+    }
+    .dp-image img{
+        border-radius: 50%;
+    }
+    .members-grid .designation{
+        text-align: left;
+        font-size: calc(var(--primary-font-size) - 5px);
+        font-weight: 800;
+    }
+    .members-grid .name{
+        font-size: var(--primary-font-size);
+        font-weight: 600;
+        color: var(--main-font-col);
+    }
+    .members-grid .phone{
+        font-size: var(--primary-font-size);
+        font-weight: bold;
+    }
+
 }
