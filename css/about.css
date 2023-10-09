@@ -234,7 +234,7 @@ nav ul li a{
     .content{
         font-size: calc(var(--secondary-font-size) - 5px);
         font-weight: bold;
-        text-align: justify;
+        text-align: start;
         margin: 20px 0;
         line-height: 2em;
     }
