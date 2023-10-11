@@ -74,13 +74,13 @@ nav ul li a{
     padding: 20px 50px;
 }
 .details-head{
-    font-size: calc(var(--primary-font-size) - 5px);
+    font-size: 26px;
     font-weight: 600;
     color: var(--main-font-col);
     text-transform: uppercase;
 }
 .details-content{
-    font-size: var(--secondary-font-size);
+    font-size: 24px;
     font-weight: bold;
 }
 .details-content a{
@@ -312,10 +312,10 @@ nav ul li a{
         padding: 15px 20px 15px 0;
     }
     .details-head{
-        font-size: calc(var(--primary-font-size) - 7px);
+        font-size: 18px;
     }
     .details-content{
-        font-size: calc(var(--secondary-font-size) - 5px);
+        font-size: 14px;
     }
 
     /* ----- MEMBERS ----- */
