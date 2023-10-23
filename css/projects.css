@@ -60,6 +60,9 @@ nav ul li a{
 /* ----- PROJECTS ----- */
 .projects-head{
     padding: 20px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .head1{
     font-size: var(--primary-font-size);
@@ -71,6 +74,22 @@ nav ul li a{
 .head3{
     font-size: calc(var(--primary-font-size) + 5px);
     font-weight: bold;
+}
+.documents-btn{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    padding: 1em 2em;
+    font-size: 20px;
+    background-color: var(--btn-background);
+    border: none;
+    border-radius: 10px;
+    color: var(--primary-font-col);
+    font-weight: 600;
+    cursor: pointer;
+}
+.documents-btn i {
+    font-size: 16px;
 }
 
 /* ----- PROJECT IMAGES ----- */
@@ -215,6 +234,19 @@ nav ul li a{
     nav ul li a:hover{
         color: var(--primary-font-col);
         transition: 0.5s;
+    }
+
+    .projects-head{
+        row-gap: 1em;
+        flex-direction: column;
+        text-align: center;
+    }
+    .documents-btn{
+        padding: 0.7em 1em;
+        font-size: 16px;
+    }
+    .documents-btn i {
+        font-size: 16px;
     }
 }
 
