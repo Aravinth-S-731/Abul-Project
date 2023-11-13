@@ -56,6 +56,11 @@ nav ul li a{
     color: var(--primary-font-col);
     text-decoration: none;
 }
+.active{
+    background-color: var(--btn-background);
+}
+@media (max-width: 800px){
+}
 
 /* ----- PROJECTS ----- */
 .projects-head{
@@ -78,7 +83,13 @@ nav ul li a{
     font-size: calc(var(--primary-font-size) + 5px);
     font-weight: bold;
 }
-.documents-btn{
+
+/* ----- DropDown ----- */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropDownbtn{
     display: flex;
     gap: 1em;
     align-items: center;
@@ -90,9 +101,66 @@ nav ul li a{
     color: var(--primary-font-col);
     font-weight: 600;
     cursor: pointer;
+    transition: 0.5s;
+}
+.dropDownbtn:hover, .dropDownbtn:focus {
+    background-color: var(--primary-font-col);
+    color: var(--btn-background);
+    transition: 0.5s;
+}
+.dropDowncontent {
+    display: none;
+    position: absolute;
+    background-color: var(--btn-background);
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+.dropDowncontent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown a:hover{
+    background-color: var(--btn-background);
+}
+
+.show{
+    display: flex;
+    flex-direction: column;
+}
+
+.dropDowncontent a{
+    display: flex;
+    width: 20em;
+    justify-content: center;
+}
+.documents-btn{
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    padding: 1em 2em;
+    background-color: var(--btn-background);
+    border-radius: 10px;
+    color: var(--primary-font-col);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.documents-btn:hover{
+    background-color: var(--primary-font-col);
+    color: var(--btn-background);
+    transition: 0.5s;
 }
 .documents-btn i {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* ----- PROJECT IMAGES ----- */

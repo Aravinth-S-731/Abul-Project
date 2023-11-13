@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <section class="contact-page">
+    <section class="project-page">
         <nav>
             <a href="index.html">
                 <img alt="logo" src="css/images/logo.webp" class="logo">
@@ -22,7 +22,7 @@
                     <li>
                         <a href="index.html">Home</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="projects.html">Projects</a>
                     </li>
                     <li>
@@ -46,13 +46,25 @@
                     <h1 class="head2">MASJITHUL AMAN</h1>
                     <h1 class="head3">Construction Work</h1>
                 </div>
-                <div>
-                    <a href="document/Masjithul Aman Trust.pdf" download="Masjithul Aman Trust">
-                        <button href="#" class="documents-btn">
-                            <i class="fa-solid fa-file-arrow-down"></i>
-                            Download Documents
-                        </button>
-                    </a>
+                <div class="dropDown">
+                    <button onclick="dropdown()" class="dropDownbtn">
+                        Download Documents
+                        <i class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <div id="dropDowncontent" class="dropDowncontent">
+                        <a href="document/Masjithul Aman Trust.pdf" download="Masjithul Aman Trust">
+                            <button href="#" class="documents-btn">
+                                <i class="fa-solid fa-file-contract"></i>
+                                Land Certificate
+                            </button>
+                        </a>
+                        <a href="document/E PROPOSED CONSTRUCTION OF BASEMENT & FIRST FLOOR  MASJITHUL AMAN ARABIC MATHARASA  BUILDING IN EXI., GROUND FLOOR.pdf" download="Plan Approval">
+                            <button href="#" class="documents-btn">
+                                <i class="fa-solid fa-mosque"></i>
+                                Plan Approval
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
 
