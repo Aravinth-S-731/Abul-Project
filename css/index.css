@@ -140,6 +140,9 @@ nav ul li a{
     color: var(--btn-background);
     transition: 0.5s;
 }
+.map-col{
+    padding: 1em;
+}
 
 
 /* ----------------------- */
