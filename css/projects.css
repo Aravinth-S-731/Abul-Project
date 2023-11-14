@@ -351,6 +351,9 @@ nav ul li a{
         padding: auto;
         width: 100vw;
     }
+    .map-col{
+        padding: 1em;
+    }
 }
 
 
