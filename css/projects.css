@@ -164,11 +164,11 @@ nav ul li a{
 }
 
 /* ----- PROJECT IMAGES ----- */
-.projects-image{
-    /* display: grid;
+/* .projects-image{
+    display: grid;
     text-align: center;
-    grid-template-rows: 100%; */
-}
+    grid-template-rows: 100%;
+} */
 .grids{
     display: flex;
     justify-content: space-evenly;
@@ -307,6 +307,9 @@ nav ul li a{
     nav ul li a:hover{
         color: var(--primary-font-col);
         transition: 0.5s;
+    }
+    .active a{
+        color: var(--primary-font-col);
     }
 
     .projects-head{

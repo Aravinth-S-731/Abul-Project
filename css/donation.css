@@ -230,6 +230,9 @@ nav ul li a{
         color: var(--primary-font-col);
         transition: 0.5s;
     }
+    .active a{
+        color: var(--primary-font-col);
+    }
 }
 
 @media (max-width: 720px) {
